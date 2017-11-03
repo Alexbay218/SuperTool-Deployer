@@ -1,0 +1,8 @@
+cd "%~dp0"
+del "%~dp0SuperTool-master.zip"
+"%~dp0wget\bin\wget.exe" --tries=5 --no-check-certificate "https://github.com/Alexbay218/SuperTool/archive/master.zip"
+rename "%~dp0master" "SuperTool-master.zip"
+"%~dp0unzip" "%~dp0SuperTool-master.zip"
+move "%~dp0SuperTool-master" "%~dp0..\"
+del "%~dp0SuperTool-master.zip"
+"%~dp0..\SuperTool-master\Setup\setup.bat"

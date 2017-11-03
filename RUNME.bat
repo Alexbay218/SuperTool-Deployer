@@ -1,0 +1,1 @@
+"%~dp0nircmdc.exe" elevate "%~dp0setup.bat"

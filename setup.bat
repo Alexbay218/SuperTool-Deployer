@@ -7,6 +7,7 @@ netstat -r > "%~dp0lists\iproute_list.txt"
 tasklist > "%~dp0lists\task_list.txt"
 net start > "%~dp0lists\service_list.txt"
 secedit /export /cfg "%~dp0lists\lspsettings_list.txt"
+reg export HKLM reg_list.reg /y
 cd "%~dp0"
 mkdir "%userprofile%\Desktop\scriptload"
 xcopy /s "%~dp0scriptload" "%userprofile%\Desktop\scriptload"
